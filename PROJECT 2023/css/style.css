@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+
+}
+.nav-list{
+width: 50%;
+
+display: FLEX;
+align-items: CENTER;
+justify-content: center;
+}
+
+.nav-list li{
+    list-style: NONE;
+    padding: 26PX 30PX;
+
+}
+.nav-list li a{
+
+text-decoration: NONE;
+color: white;
+
+}
+.nav-list li a:hover{
+    color: grey;
+}
+    
+.rightnav{
+    
+    width: 50%;
+    text-align: right;
+   
+}
+.logo {
+width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo img{
+    width: 60%;
+border: 3PX white;
+border-radius: 60PX;
+}
+#search {
+    padding: 5PX;
+    font-size: 17PX;
+    border: 3PX SOLID grey;
+    border-radius: 15PX;
+
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/gym.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    
+}
+
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: FLEX;
+    align-items: CENTER;
+    justify-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 65%;
+
+}
+
+.firsthalf{
+width: 80%;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.secondhalf{
+width: 30%;
+}
+   .secondhalf img{
+    width: 80%;
+    BORDER-RADIUS: 30%;
+   }
+.textbig{
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.textsmall{
+font-size: 30px;
+font-family: fantasy;
+}
+.btn{
+    padding: 8px 10px;
+    border: 10px;
+    font-size: 18px;
+    font-family: emoji;
+    color: black;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 10px;
+    border-radius: 30%;
+}
+.sectiontag{
+    width: 80%;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
+.secright{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+}
+.imgfluid{
+    width: 50%;
+}
+.thumbnail{
+    width: 200%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.sectionsubtag{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+}
+.paras{
+    padding: 70px 20px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+   
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+   
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+   
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+   
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+   
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+   
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+   
+  
+  .modal-body {padding: 2px 16px;}
+  
+   
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+nav-list .dropdown{
+    display: block;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(107, 66, 66, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./css/style.css">
+   
+    <title>goodshape</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="./img/img.jpg" alt="logo"> </div>
+            <li> <a href="p.html" >home</a> </li>
+            <div class="dropdown">
+                <li> <a href="#services" >services</a> 
+                  <div class="dropdown-content">
+                    <a href="RECIPES.HTML">healthy recipes</a>
+                    <a href="EXCERCIES.HTML">excercise</a>
+                    <a href="PT.HTML">personal training</a>
+                  </div>  
+                </li>
+            </div>   
+            <li> <a href="contact.html" >contact</a> </li>
+            <li> <a href="about.html" >about</a> </li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+           <p class="textbig"> <b>NAMASTE</b> <br>Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual..</p><br>
+           <p class="textsmall">check your bmi</p>
+           <div class="button">
+              <button id = "bmi-calc"class="btn" onclick="openmodal()">BMI CALCULATOR</button>
+              
+           </div>
+        </div>
+            <div class="secondhalf">
+                <img src="img/bowl.jpg" alt="food">
+            </div>
+
+        </div>
+   
+    
+   
+    </section>
+    
+ 
+ 
+    <div id = "bmi" class = "modal">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <span class = "close" onclick="close()">&times;</span>
+                <h2> BMI CALCULATOR</h2>
+            </div>
+            <div class = "modal-body">
+                <p>Height (in cm)</p>
+ 
+                <input type="text" id="height" />
+     
+                <p>Weight (in kg)</p>
+     
+                <input type="text" id="weight" />
+     
+                <button id="btn">Calculate</button>
+     
+                <div id="result"></div>
+        </div>
+    </div>
+    <script src = "./js/bmi.js"></script> 
+</body>
+</html> 
